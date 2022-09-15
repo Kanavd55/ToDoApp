@@ -10,19 +10,6 @@ app.set('views','./views');
 const db=require('./config/mongoose');
 const tasks=require('./models/task');
 
-var task=[
-    {
-        desc:"Birthday Party",
-        category:"Personal",
-        date:"28/08/2022"
-    },
-    {
-        desc:"Testing Completion",
-        category:"Work",
-        date:"15/10/2022"
-    },
-]
-
 app.get('/',function(req,res){
     tasks.find({},function(err,task){
         if(err){
