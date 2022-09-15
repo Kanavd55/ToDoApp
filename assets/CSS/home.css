@@ -113,3 +113,10 @@ ul i{
     padding-right: 10px;
 }
 
+#delete{
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    right: 28%;
+}
+

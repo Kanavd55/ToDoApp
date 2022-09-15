@@ -30,6 +30,17 @@ app.get('/',function(req,res){
             return;
         }
         return res.render('home',{title:"my app",tasklist:task});
+    });
+});
+
+app.get('/delete-task',function(req,res){
+    let id=req.query.id;
+    tasks.findByIdAndDelete(id,function(err){
+        if(err){
+            console.log("error in deleting");
+            return;
+        }
+        return res.redirect('back');
     })
 })
 
@@ -45,8 +56,8 @@ app.post('/create-task',function(req,res){
         }
         console.log("********",newTask);
         return res.redirect('back');
-    })
-})
+    });
+});
 
 app.listen(port,function(err){
     if(err){

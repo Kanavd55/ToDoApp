@@ -40,6 +40,7 @@
                             <p id="describe"><i class="fa-solid fa-bars-progress"></i><%= i.description %></p>
                             <span id="date"><i class="fa-solid fa-calendar-days"></i><%= i.date %></span>
                             <span id="category"><%= i.category %></span>
+                            <a href="/delete-task/?id=<%=i.id%>"><i id="delete" class="fa-solid fa-trash"></i></a>
                         </li>
                         <hr>
                     <% } %>
