@@ -4,10 +4,44 @@
         <title>
             <%= title %>
         </title>
+        <script  src="https://kit.fontawesome.com/b3348ae33f.js"
+      crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="/CSS/home.css">
     </head>
     <body>
-        <h1>
-            Kanav
-        </h1>
+        <div id="main">
+            <div id="box">
+                <h1>
+                    TODO App
+                </h1>
+                <hr>
+                <form>
+                    <label for="desc" class="labels">DESCRIPTION</label>
+                        <input type="text" name="desc" id="desc" placeholder="What do you need to do?">
+                    </label>
+                </form>
+                <hr>
+                <aside>
+                    <form>
+                        <label for="grp" class="labels">CATEGORY</label>
+                        <select id="grp" class="details">
+                            <option name="Personal">Personal</option>
+                            <option name="Work">Work</option>
+                            <option name="School">School</option>
+                            <option name="Other">Other</option>
+                        </select>
+                    </form>
+                </aside>
+                <form>
+                    <span class="labels" style="margin-left:2rem;">DUE DATE</span>
+                        <input type="date" name="desc" id="desc" style="width: 12rem;">
+                    </label>
+                </form>
+                <hr>
+                <button id="submit" type="submit"><i class="fa-solid fa-plus"></i> Add Task</button>
+            </div>
+
+        </div>
+    <script type="text/javascript" src="/JavaScript/home.js"></script>
     </body>
 </html>

@@ -1,0 +1,84 @@
+body{
+    background-color: black;
+}
+
+#main{
+    margin-left: 25%;
+}
+
+h1{
+    text-align: center;
+    color: lightslategrey;
+    margin-bottom: 0.2rem;
+}
+
+#box{
+    background-color: white;
+    height: 30rem;
+    width: 40rem;
+    padding: 0.5rem;
+}
+
+.labels{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family:monospace;
+    margin-left: 1.3rem;
+}
+
+#desc{
+    height: 2rem;
+    width: 90% ;
+    border: none;
+    background-color: transparent;
+    margin: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+    padding: 0.3rem;
+}
+
+
+input{
+    font-family:Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+
+aside{
+    display: inline;
+}
+
+form{
+    display: inline;
+}
+
+#between{
+    height: 2rem;
+    width: 0;
+}
+
+.details{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 0;
+    width: 12rem;
+    border: none;
+    margin-right: 1rem;
+}
+
+button{
+    background-color: rgb(76, 88, 88);
+    color: white;
+    padding: 0.8rem;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+}
+
+#submit{
+    margin-top: 1.5rem;
+    margin-left: 12rem;
+}
+
