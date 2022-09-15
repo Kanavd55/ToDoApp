@@ -15,32 +15,36 @@
                     TODO App
                 </h1>
                 <hr>
-                <form>
+                <form action="/create-task" method="post">
                     <label for="desc" class="labels">DESCRIPTION</label>
-                        <input type="text" name="desc" id="desc" placeholder="What do you need to do?">
-                    </label>
-                </form>
-                <hr>
-                <aside>
-                    <form>
-                        <label for="grp" class="labels">CATEGORY</label>
-                        <select id="grp" class="details">
-                            <option name="Personal">Personal</option>
-                            <option name="Work">Work</option>
-                            <option name="School">School</option>
-                            <option name="Other">Other</option>
+                        <input type="text" name="desc" id="desc" placeholder="What do you need to do?" required>
+                    <hr>
+                    <aside>
+                    <label for="grp" class="labels">CATEGORY</label>
+                        <select id="grp" class="details" name="category">
+                            <option  value="Personal">Personal</option>
+                            <option  value="Work">Work</option>
+                            <option  value="School">School</option>
+                            <option  value="Other">Other</option>
                         </select>
-                    </form>
-                </aside>
-                <form>
+                    </aside>
                     <span class="labels" style="margin-left:2rem;">DUE DATE</span>
-                        <input type="date" name="desc" id="desc" style="width: 12rem;">
-                    </label>
+                        <input type="date" name="date" id="desc" style="width: 12rem;" required>
+                    <hr>
+                    <button id="submit" type="submit"><i class="fa-solid fa-plus"></i> Add Task</button>
+                    <hr>
                 </form>
-                <hr>
-                <button id="submit" type="submit"><i class="fa-solid fa-plus"></i> Add Task</button>
+                <ul>
+                    <% for(let i of tasklist){ %>
+                        <li>
+                            <p id="describe"><i class="fa-solid fa-bars-progress"></i><%= i.description %></p>
+                            <span id="date"><i class="fa-solid fa-calendar-days"></i><%= i.date %></span>
+                            <span id="category"><%= i.category %></span>
+                        </li>
+                        <hr>
+                    <% } %>
+                </ul>
             </div>
-
         </div>
     <script type="text/javascript" src="/JavaScript/home.js"></script>
     </body>

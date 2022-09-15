@@ -14,7 +14,6 @@ h1{
 
 #box{
     background-color: white;
-    height: 30rem;
     width: 40rem;
     padding: 0.5rem;
 }
@@ -79,6 +78,38 @@ button{
 
 #submit{
     margin-top: 1.5rem;
-    margin-left: 12rem;
+    margin-bottom: 1.5rem;
+    margin-left: 16rem;
+}
+
+ul{
+    list-style: none;
+    color: lightslategray;
+    padding: 0;
+}
+
+ul i{
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+#describe{
+    font-size: 1.2rem;
+}
+
+#date{
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+}
+
+#category{
+    margin-left: 1rem;
+    border: 1px solid lightslategray;
+    background-color: rgb(212, 212, 62);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
